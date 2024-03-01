@@ -1,10 +1,16 @@
 {
-  "name": "ragbot",
+  "name": "@keshavga1209/ragBot",
+  "private": false,
   "version": "1.0.0",
   "description": "bot library",
-  "main": "index.js",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "build": "vite build"
   },
   "author": "Keshav",
@@ -16,5 +22,8 @@
   },
   "peerDependencies": {
     "react": "^18.2.0"
+  },
+  "publishConfig": {
+    "@keshavga1209:registry": "https://npm.pkg.github.com"
   }
 }
